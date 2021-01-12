@@ -34,3 +34,6 @@ Feel free to report bugs, feature requests, etc. to here:
 
 https://github.com/AleronWen/StardewMods/issues
 
+## Information
+
+I did not created the mods, I just updated them to work with recent version of SMAPI as [JarvieK](https://github.com/Jarvie8176), the mods creator, seems to not maintain them anymore.
