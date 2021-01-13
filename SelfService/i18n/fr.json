@@ -1,0 +1,11 @@
+{
+  "SeedShop_Menu": "\"Sers-toi si tu as besoin de quelque chose\"",
+  "SeedShopMenu_Shop": "Magasin",
+  "SeedShopMenu_Leave": "Quitter",
+  "FishShop_Menu": "\"Je suis sorti pêcher. Prends ce que tu veux\"",
+  "FishShop_Menu_DocVisit": "\"Je suis parti chez le docteur. Prends ce dont tu as besoin\"",
+  "FishShopMenu_Shop": "Magasin",
+  "FishShopMenu_Leave": "Quitter",
+  "AnimalShop_Menu": "\"Désolé j'avais d'autres choses à faire aujourd'hui, laisse la monnaie sur le comptoir et sers-toi!\"",
+  "ScienceHouse_CarpenterMenu": "\"Je ne suis pas au magasin pour le moment, laisse un message si tu as besoin de quoi que ce soit.\""
+}
