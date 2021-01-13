@@ -75,17 +75,18 @@ namespace SelfServe
 
         public override void Entry(IModHelper helper)
         {
-            InputEvents.ButtonPressed += this.InputEvents_ButtonPressed;
-            SaveEvents.AfterLoad += this.OnLoad;
-            SaveEvents.AfterReturnToTitle += this.OnExit;
+            helper.Events.Input.ButtonPressed += InputEvents_ButtonPressed;
+            helper.Events.GameLoop.SaveLoaded += OnLoad;
+            helper.Events.GameLoop.ReturnedToTitle += this.OnExit;
 
             i18n = helper.Translation;
         }
 
-        private void InputEvents_ButtonPressed(object sender, EventArgsInput e)
+        private void InputEvents_ButtonPressed(object sender, ButtonPressedEventArgs e)
         {
-            if (this.inited && this.OpenMenuHandler(e.IsActionButton))
-                e.SuppressButton();
+            if (this.inited)
+                this.OpenMenuHandler(e.Button.IsActionButton());
+            //if (this.inited && this.OpenMenuHandler(e.IsActionButton)) e.SuppressButton();
         }
 
         private bool OpenMenuHandler(bool isActionKey)
@@ -116,7 +117,11 @@ namespace SelfServe
                                 switch (whichAnswer)
                                 {
                                     case "Shop":
-                                        Game1.activeClickableMenu = (IClickableMenu)new ShopMenu(Utility.getShopStock(true), 0, "Pierre");
+                                        List<ISalable> shopMenuContent = new List<ISalable>();
+                                        foreach (Item item in Utility.getShopStock(true))
+                                            shopMenuContent.Add((ISalable)item);
+
+                                        Game1.activeClickableMenu = (IClickableMenu)new ShopMenu(shopMenuContent, 0, "Pierre");
                                         break;
                                     case "Leave":
                                         // do nothing
@@ -141,7 +146,7 @@ namespace SelfServe
                         );
                         break;
                     case "ScienceHouse":
-                        if (Game1.player.daysUntilHouseUpgrade < 0 && !Game1.getFarm().isThereABuildingUnderConstruction())
+                        if (Game1.player.daysUntilHouseUpgrade.Value < 0 && !Game1.getFarm().isThereABuildingUnderConstruction())
                         {
                             Response[] answerChoices;
                             if (Game1.player.HouseUpgradeLevel < 3)
