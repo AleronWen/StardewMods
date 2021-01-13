@@ -22,7 +22,6 @@ namespace RentedTools
         private bool rentedToolsOffered;
         private bool recycleOffered;
 
-        private Dictionary<Tuple<List<Item>, int>, Item> rentedToolRefs;
 
         private ITranslationHelper i18n;
 
@@ -31,8 +30,8 @@ namespace RentedTools
 
         public override void Entry(IModHelper helper)
         {
-            SaveEvents.AfterLoad += this.Bootstrap;
-            MenuEvents.MenuClosed += this.MenuCloseHandler;
+            helper.Events.GameLoop.SaveLoaded += Bootstrap;
+            helper.Events.Display.MenuChanged += MenuEventHandler;
 
             this.i18n = helper.Translation;
         }
@@ -49,7 +48,6 @@ namespace RentedTools
             this.rentedToolsOffered = false;
             this.recycleOffered = false;
 
-            this.rentedToolRefs = new Dictionary<Tuple<List<Item>, int>, Item>();
             this.blackSmithCounterTiles = new List<Vector2>();
 
             // params init
@@ -78,35 +76,35 @@ namespace RentedTools
             return who.toolBeingUpgraded.Value;
         }
 
-        private void MenuCloseHandler(object sender, EventArgsClickableMenuClosed e)
+        private void MenuEventHandler(object sender, MenuChangedEventArgs e)
+        {
+            if (e.NewMenu == null && e.OldMenu != null)
+            {
+                // menu is closed
+                MenuCloseHandler(sender, e);
+            }
+        }
+
+        private void MenuCloseHandler(object sender, MenuChangedEventArgs e)
         {
             if (this.shouldCreateFailedToRentTools)
             {
                 this.SetupFailedToRentDialog(this.player);
                 this.shouldCreateFailedToRentTools = false;
-                return;
             }
-
-            if (this.shouldCreateSucceededToRentTools)
+            else if (this.shouldCreateSucceededToRentTools)
             {
-                this.SetupSucceededToRentDialog(this.player);
+                this.SetupSucceededToRentDialog();
                 this.shouldCreateSucceededToRentTools = false;
-                return;
-            }
-
-            if (this.rentedToolsOffered)
+            } else if (this.rentedToolsOffered)
             {
                 this.rentedToolsOffered = false;
-                return;
             }
-
-            if (this.recycleOffered)
+            else if (this.recycleOffered)
             {
                 this.recycleOffered = false;
-                return;
             }
-
-            if (this.inited && this.IsPlayerAtCounter(this.player))
+            else if (this.inited && this.IsPlayerAtCounter(this.player))
             {
                 if (this.player.toolBeingUpgraded.Value == null && this.HasRentedTools(this.player))
                 {
@@ -219,7 +217,7 @@ namespace RentedTools
             rentedToolsOffered = true;
         }
 
-        private void SetupSucceededToRentDialog(Farmer who)
+        private void SetupSucceededToRentDialog()
         {
             i18n.Get("Blacksmith_HowToReturn");
         }
@@ -274,9 +272,9 @@ namespace RentedTools
                 return;
             }
 
-            int toolCost = this.GetToolCost(toolToBuy);
+            int toolCost = this.GetToolCost();
 
-            if (who.money >= toolCost && who.freeSpotsInInventory() > 0)
+            if (who.Money >= toolCost && who.freeSpotsInInventory() > 0)
             {
                 ShopMenu.chargePlayer(who, 0, toolCost);
                 who.addItemToInventory(toolToBuy);
@@ -308,98 +306,12 @@ namespace RentedTools
             }
 
             return;
-
-
-            // NOTE: not using custom type anymore
-
-            /*
-
-            while (who.items.Any(item => item is IRentedTool))
-            {
-                foreach (Item item in who.items)
-                {
-                    if (item is IRentedTool)
-                    {
-                        who.removeItemFromInventory(item);
-                        break;
-                    }
-                }
-            }
-
-            */
         }
 
-        private int GetToolCost(Item tool)
+        private int GetToolCost()
         {
             // TODO: this function is subject to change
             return 200;
         }
-
-        // NOTE: not using the custom type anymore
-
-        /* 
-        private void BeforeSaveHandler(object sender, EventArgs e)
-        {
-            rentedToolRefs.Clear();
-
-            // NOTE: Farmer.addItemToInventory()'s implementation uses raw mapping of item position and index in Farmer.items
-            // i.e. items[10] means the 10th item in player's inventory, I suppose it's subject to change unless the game provides
-            // and uses a method that would return index of item after inserting.
-
-            // get rented tool references
-
-            for (int i = 0; i < this.player.items.Count; i++)
-            {
-                if (this.player.items[i] is IRentedTool)
-                {
-                    this.rentedToolRefs.Add(new Tuple<List<Item>, int>(this.player.items, i), this.player.items[i]);
-                    Monitor.Log($"rented tool found: {this.player.items[i]} in player's inventory");
-                }
-            }
-
-            // loop through all chests
-            foreach (GameLocation loc in Game1.locations)
-            {
-                foreach (var key in loc.objects.Keys)
-                {
-                    if (loc.objects[key] is StardewValley.Objects.Chest)
-                    {
-                        // loop through each chest
-                        List<Item> currItems = ((StardewValley.Objects.Chest)loc.objects[key]).items;
-                        for (int i = 0; i < currItems.Count(); i++)
-                        {
-                            if (currItems[i] is IRentedTool)
-                            {
-                                this.rentedToolRefs.Add(new Tuple<List<Item>, int>(currItems, i), currItems[i]);
-                                Monitor.Log($"rented tool found: {currItems[i].ToString()} in {loc.objects[key]}");
-                            }
-                        }
-                    }
-                }
-            }
-
-            // remove rented tools from all inventories
-
-            foreach(KeyValuePair<Tuple<List<Item>, int>, Item> pair in this.rentedToolRefs.Reverse())
-            {
-                Monitor.Log($"removing {pair.Value.ToString()} in {pair.Key.Item1.ToString()} at index {pair.Key.Item2}");
-                pair.Key.Item1.RemoveAt(pair.Key.Item2);
-            }
-        }
-
-        private void AfterSaveHandler(object sender, EventArgs e)
-        {
-            // load rented tools back to player's inventory
-
-            foreach (KeyValuePair<Tuple<List<Item>, int>, Item> pair in this.rentedToolRefs)
-            {
-                Monitor.Log($"addint {pair.Value.ToString()} to {pair.Key.Item1.ToString()} at index {pair.Key.Item2}");
-                pair.Key.Item1.Insert(pair.Key.Item2, pair.Value);
-            }
-
-            rentedToolRefs.Clear();
-        }
-
-        */
     }
 }

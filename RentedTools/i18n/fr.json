@@ -1,0 +1,11 @@
+﻿{
+  "Blacksmith_RecycleTools_Menu": "Veux-tu me rendre les outils loués ?",
+  "Blacksmith_RecycleToolsMenu_Confirm": "OK",
+  "Blacksmith_RecycleToolsMenu_Leave": "Pas maintenant",
+  "Blacksmith_OfferTools_Menu": "Tu peux louer ma vieille {{oldToolName}} pour 200g pendant que j'améliore ta {{newToolName}}.",
+  "Blacksmith_OfferToolsMenu_Confirm": "Bien sûr!",
+  "Blacksmith_OfferToolsMenu_Leave": "Non merci",
+  "Blacksmith_HowToReturn": "Revien me voir avec les outils loués sur toi quand tu voudras me les rendre.",
+  "Blacksmith_NoInventorySpace": "Ton inventaire est plein.",
+  "Blacksmith_InsufficientFundsToRentTool": "Tu n'as pas assez d'argent."
+}
