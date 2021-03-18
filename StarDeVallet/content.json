@@ -1,0 +1,35 @@
+{
+   "Format": "1.20.0",
+   "Changes": [
+      {
+         "Action": "Load",
+         "Target": "Portraits/Robin",
+         "FromFile": "assets/RobineBalaskoPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Demetrius",
+         "FromFile": "assets/PascalDemetriusPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Sebastian",
+         "FromFile": "assets/SebastianGarrelPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Willy",
+         "FromFile": "assets/WillyDupontelPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Alex",
+         "FromFile": "assets/AlexYounPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Kent",
+         "FromFile": "assets/JeanKentVanDammePortraits.png"
+      }
+   ]
+}
