@@ -1,0 +1,13 @@
+{
+   "Name": "Star du vallet",
+   "Author": "DoolWood_ and al.",
+   "Version": "0.1",
+   "Description": "What if Stardew Valley met French cinema stars ?",
+   "UniqueID": "AleronWen.StarDuVallet",
+   "MinimumApiVersion": "3.0.0",
+   "UpdateKeys": [ "" ],
+   "ContentPackFor": {
+    	"UniqueID": "Pathoschild.ContentPatcher",
+    	"MinimumVersion": "1.20.0"
+  }
+}

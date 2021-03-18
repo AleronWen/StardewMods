@@ -17,16 +17,23 @@ Allows to shop at these shops when no one attends the counter:
 - Carpenter's shop
 - Fish shop
 
+## Star du Vallet
+
+What if Stardew Valley met French cinema stars ? That's the question talented french streamer [DollyWood_](https://www.twitch.tv/dollywood_) asked to her community during a charity event for student named [Stud'Live](https://studforce.fr/) in association with [Secours Populaire](https://www.secourspopulaire.fr/). For more information about the event please go the [dedicated page](https://www.secourspopulaire.fr/stud-live-une-operation-solidaire-en-ligne-au-profit-des-etudiants) on Secours Populaire web site.
+
+This Stardew Valley mod is the answer.
+
+**IMPORTANT:** This mod requires [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) v1.20+ to work.
+
 ## Installation
 
-These mods require [SMAPI](https://smapi.io/) to work properly.
+These mods require *SMAPI* to work properly.
 
-install SMAPI
-
-unpack the zip file, move to the game directory (or use any Stardew Valley mod manager)
+  1. Install SMAPI from the [official](https://smapi.io/) web site or from [Nexus Mods](https://www.nexusmods.com/stardewvalley/mods/2400)
+  2. Optionally install [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915)
+  3. Unpack the zip file, move to the game directory (or use any Stardew Valley mod manager)
 
 launch game with SMAPI
-
 
 ## Bugs
 
