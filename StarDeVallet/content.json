@@ -30,6 +30,26 @@
          "Action": "Load",
          "Target": "Portraits/Kent",
          "FromFile": "assets/JeanKentVanDammePortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Evelyn",
+         "FromFile": "assets/EvelineRenaudPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/George",
+         "FromFile": "assets/GeorgesHernandezPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Linus",
+         "FromFile": "assets/LinusRichardPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Pam",
+         "FromFile": "assets/PamRobinPortraits.png"
       }
    ]
 }

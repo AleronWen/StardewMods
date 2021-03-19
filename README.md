@@ -19,7 +19,7 @@ Allows to shop at these shops when no one attends the counter:
 
 ## Star du Vallet
 
-What if Stardew Valley met French cinema stars ? That's the question talented french streamer [DollyWood_](https://www.twitch.tv/dollywood_) asked to her community during a charity event for student named [Stud'Live](https://studforce.fr/) in association with [Secours Populaire](https://www.secourspopulaire.fr/). For more information about the event please go the [dedicated page](https://www.secourspopulaire.fr/stud-live-une-operation-solidaire-en-ligne-au-profit-des-etudiants) on Secours Populaire web site.
+What if Stardew Valley met French cinema stars ? That's the question talented french streamer [DollyWood_](https://www.twitch.tv/dollywood_) asked to her community during a charity event for student named [Stud'Live](https://studforce.fr/) in association with [Secours Populaire](https://www.secourspopulaire.fr/). For more information about the event please go to the [dedicated page](https://www.secourspopulaire.fr/stud-live-une-operation-solidaire-en-ligne-au-profit-des-etudiants) on Secours Populaire web site.
 
 This Stardew Valley mod is the answer.
 
