@@ -30,6 +30,11 @@
          "Action": "Load",
          "Target": "Portraits/Kent",
          "FromFile": "assets/JeanKentVanDammePortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Evelyn",
+         "FromFile": "assets/EvelineRenaudPortraits.png"
       }
    ]
 }
