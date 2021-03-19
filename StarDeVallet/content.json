@@ -40,6 +40,11 @@
          "Action": "Load",
          "Target": "Portraits/George",
          "FromFile": "assets/GeorgesHernandezPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Linus",
+         "FromFile": "assets/LinusRichardPortraits.png"
       }
    ]
 }
