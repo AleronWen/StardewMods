@@ -50,6 +50,11 @@
          "Action": "Load",
          "Target": "Portraits/Pam",
          "FromFile": "assets/PamRobinPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Sam",
+         "FromFile": "assets/KevAsamsPortraits.png"
       }
    ]
 }
