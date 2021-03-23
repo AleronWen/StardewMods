@@ -23,6 +23,23 @@ What if Stardew Valley met French cinema stars ? That's the question talented fr
 
 This Stardew Valley mod is the answer.
 
+### The casting
+
+We absolutely love most of them, and we love to hate the remaining ones...
+
+- Alex: [Michaël Youn](https://www.imdb.com/name/nm0949210/)
+- Demetrius: [Pascal Legitimus](https://www.imdb.com/name/nm0529591/)
+- Evelyn: [Line Renaud](https://www.imdb.com/name/nm0719232/)
+- George: [Gérard Hernandez](https://www.imdb.com/name/nm0379587)
+- Gunther: [Sébastien Folin](https://www.imdb.com/name/nm2029498/)
+- Kent: [Jean-Claude Van Damme](https://www.imdb.com/name/nm0000241/)
+- Linus: [Pierre Richard](https://www.imdb.com/name/nm0007069/)
+- Pam: [Muriel Robin](https://www.imdb.com/name/nm0732222/)
+- Robin: [Josiane Balasko](https://www.imdb.com/name/nm0001929/)
+- Sam: [Kev Adams](https://www.imdb.com/name/nm1133795/)
+- Sebastian: [Louis Garrel](https://www.imdb.com/name/nm0308039/)
+- Willy: [Albert Dupontel](https://www.imdb.com/name/nm0243355/)
+
 **IMPORTANT:** This mod requires [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) v1.20+ to work.
 
 ## Installation
