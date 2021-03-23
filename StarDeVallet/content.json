@@ -53,6 +53,11 @@
       },
       {
          "Action": "Load",
+         "Target": "Portraits/Gunther",
+         "FromFile": "assets/GuntherFollinPortraits.png"
+      },
+      {
+         "Action": "Load",
          "Target": "Portraits/Sam",
          "FromFile": "assets/KevAsamsPortraits.png"
       }
