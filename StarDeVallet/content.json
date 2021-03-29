@@ -75,6 +75,11 @@
          "Action": "Load",
          "Target": "Portraits/Pierre",
          "FromFile": "assets/PierreGustinPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Sandy",
+         "FromFile": "assets/SandyCelariePortraits.png"
       }
    ]
 }
