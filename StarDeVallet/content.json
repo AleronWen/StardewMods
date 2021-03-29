@@ -70,6 +70,11 @@
          "Action": "Load",
          "Target": "Portraits/Marnie",
          "FromFile": "assets/MarnieMoreauPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Pierre",
+         "FromFile": "assets/PierreGustinPortraits.png"
       }
    ]
 }
