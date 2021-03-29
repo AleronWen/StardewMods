@@ -60,6 +60,11 @@
          "Action": "Load",
          "Target": "Portraits/Sam",
          "FromFile": "assets/KevAsamsPortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Gus",
+         "FromFile": "assets/GusBourdonPortraits.png"
       }
    ]
 }
