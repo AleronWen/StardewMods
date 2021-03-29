@@ -27,18 +27,50 @@ This Stardew Valley mod is the answer.
 
 We absolutely love most of them, and we love to hate the remaining ones...
 
+- Abigail: TBD
 - Alex: [Michaël Youn](https://www.imdb.com/name/nm0949210/)
+- Birdie: TBD
+- Bouncer: TBD
+- Caroline: TBD
+- Clint: TBD
 - Demetrius: [Pascal Legitimus](https://www.imdb.com/name/nm0529591/)
+- Dwarf: TBD
+- Elliott: TBD
+- Emily: TBD
 - Evelyn: [Line Renaud](https://www.imdb.com/name/nm0719232/)
 - George: [Gérard Hernandez](https://www.imdb.com/name/nm0379587)
+- Gil: TBD
+- Governor: TBD
+- Grandpa: TBD
 - Gunther: [Sébastien Folin](https://www.imdb.com/name/nm2029498/)
+- Gus: [Didier Bourdon](https://www.imdb.com/name/nm0099828/)
+- Haley: TBD
+- Harvey: TBD
+- Henchman: TBD
+- Jas: TBD
 - Kent: [Jean-Claude Van Damme](https://www.imdb.com/name/nm0000241/)
+- Krobus: TBD
+- Leah: TBD
+- Leo: TBD
+- Levis: TBD
 - Linus: [Pierre Richard](https://www.imdb.com/name/nm0007069/)
+- Marlon: TBD
+- Marnie: [Yolande Moreau](https://www.imdb.com/name/nm0603446/)
+- Maru: TBD
+- Morris: TBD
+- Mr. Qi: TBD
 - Pam: [Muriel Robin](https://www.imdb.com/name/nm0732222/)
+- Penny: TBD
+- Pierre: [Didier Gustin](https://www.imdb.com/name/nm0349134/)
+- Professor Snail: TBD
 - Robin: [Josiane Balasko](https://www.imdb.com/name/nm0001929/)
 - Sam: [Kev Adams](https://www.imdb.com/name/nm1133795/)
+- Sandy: [Clémentine Célarié](https://www.imdb.com/name/nm0194662/)
 - Sebastian: [Louis Garrel](https://www.imdb.com/name/nm0308039/)
+- Shane: TBD
+- Vincent: TBD
 - Willy: [Albert Dupontel](https://www.imdb.com/name/nm0243355/)
+- Wizzard: TBD
 
 **IMPORTANT:** This mod requires [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) v1.20+ to work.
 
