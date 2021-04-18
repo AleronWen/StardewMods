@@ -35,7 +35,7 @@ We absolutely love most of them, and we love to hate the remaining ones...
 - Clint: TBD
 - Demetrius: [Pascal Legitimus](https://www.imdb.com/name/nm0529591/)
 - Dwarf: TBD
-- Elliott: TBD
+- Elliott: [Franck Dubosc](https://www.imdb.com/name/nm0239498/)
 - Emily: TBD
 - Evelyn: [Line Renaud](https://www.imdb.com/name/nm0719232/)
 - George: [Gérard Hernandez](https://www.imdb.com/name/nm0379587)
