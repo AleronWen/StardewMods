@@ -80,6 +80,11 @@
          "Action": "Load",
          "Target": "Portraits/Sandy",
          "FromFile": "assets/SandyCelariePortraits.png"
+      },
+      {
+         "Action": "Load",
+         "Target": "Portraits/Elliott",
+         "FromFile": "assets/ElliottDubosquePortraits.png"
       }
    ]
 }
